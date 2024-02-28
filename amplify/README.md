@@ -4,15 +4,15 @@
 
 Para la solución se estableció como prioridad aprovisionar un entorno funcional en la nube. Para el efecto se utilizó AWS Amplify, que permite crear APIs completas aprovechando los siguientes servicios:
 
-- _CloudFormation_ para la Infraestructura como Código (IaC)
-- _Lambda_ para la ejecución del código (serverless)
-- _API Gateway_ como puerta de entrada para el llamado a los servicios CRUD (API REST)
-- _DynamoDB_ como solución de base de datos NoSQL
-- _IAM_ para la gestión de permisos entre los servicios utilizados, antes mencionados
+- **CloudFormation** para la Infraestructura como Código (IaC)
+- **Lambda** para la ejecución del código (serverless)
+- **API Gateway** como puerta de entrada para el llamado a los servicios CRUD (API REST)
+- **DynamoDB** como solución de base de datos NoSQL
+- **IAM** para la gestión de permisos entre los servicios utilizados, antes mencionados
 
 ## Ejecución inicial
 
-- Instalar _Amplify CLI_ desde Node.js/NPM o ejecutable en el entorno que ejecutará las tareas CI/CD. Más información sobre la instalación de Amplify CLI en https://docs.amplify.aws/javascript/tools/cli/start/set-up-cli/
+- Instalar **Amplify CLI** desde Node.js/NPM o ejecutable en el entorno que ejecutará las tareas CI/CD. Más información sobre la instalación de Amplify CLI en https://docs.amplify.aws/javascript/tools/cli/start/set-up-cli/
 - Configurar las credenciales de acceso (Access Key ID y Secret Access Key) en el archivo `~/.aws/credentials`. El usuario asociado a las credenciales debe contar con los [permisos necesarios](https://docs.amplify.aws/javascript/tools/cli/start/set-up-cli/) para ejecutar los comandos de Amplify CLI.
 - Descargar el código fuente (checkout) a repositorio local:
 
