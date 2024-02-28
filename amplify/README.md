@@ -2,7 +2,7 @@
 
 ## Detalles de la solución
 
-Se utilizó AWS Amplify, que permite crear APIs completas aprovechando los siguientes servicios:
+Para la solución se estableció como prioridad aprovisionar un entorno funcional en la nube. Para el efecto se utilizó AWS Amplify, que permite crear APIs completas aprovechando los siguientes servicios:
 
 - _CloudFormation_ para la Infraestructura como Código (IaC)
 - _Lambda_ para la ejecución del código (serverless)
