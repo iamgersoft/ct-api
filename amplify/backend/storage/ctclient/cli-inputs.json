@@ -1,0 +1,22 @@
+{
+  "resourceName": "ctclient",
+  "tableName": "ct_client",
+  "partitionKey": {
+    "fieldName": "id_number",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "gsi_client_name",
+      "partitionKey": {
+        "fieldName": "last_name",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "first_name",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}
