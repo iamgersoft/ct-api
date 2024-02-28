@@ -10,6 +10,34 @@ Se utilizó AWS Amplify, que permite crear APIs completas aprovechando los sigui
 - _DynamoDB_ como solución de base de datos NoSQL
 - _IAM_ para la gestión de permisos entre los servicios utilizados, antes mencionados
 
+## Ejecución inicial
+
+- Instalar _Amplify CLI_ desde Node.js/NPM o ejecutable en el entorno que ejecutará las tareas CI/CD. Más información sobre la instalación de Amplify CLI en https://docs.amplify.aws/javascript/tools/cli/start/set-up-cli/
+- Configurar las credenciales de acceso (Access Key ID y Secret Access Key) en el archivo `~/.aws/credentials`. El usuario asociado a las credenciales debe contar con los [permisos necesarios](https://docs.amplify.aws/javascript/tools/cli/start/set-up-cli/) para ejecutar los comandos de Amplify CLI.
+- Descargar el código fuente (checkout) a repositorio local:
+
+```bash
+git clone https://github.com/iamgersoft/ct-api.git
+```
+
+- Inicializar el proyecto Amplify:
+
+```bash
+amplify init
+```
+
+- Crear el entorno. Para este caso se crea un entorno llamado `dev`:
+
+```bash
+amplify env add dev
+```
+
+- Hacer `push` del código fuente de la aplicación Python al entorno Amplify:
+
+```bash
+amplify push -y
+```
+
 ## CI/CD
 
 Identificar cambios en el código desde
